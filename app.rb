@@ -41,6 +41,8 @@ def main(args)
     sum = (-1 * sum) / n
     file.write "++++++++++++++++++++++++++++++++++\n"
     p "sum: #{sum}"
+    sum2 = sum - (((256) ** n - bsize) / (size ** n)) * Math::log((1 / (size ** n)), 2)
+    p "sum2: #{sum2}"
     file.write "sum: #{sum}\n"
     file.write "##################################\n"
   end
