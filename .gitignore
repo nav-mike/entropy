@@ -39,3 +39,4 @@ build/
 
 # input files
 in/
+*.txt
